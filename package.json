@@ -1,7 +1,7 @@
 {
   "name": "lab5",
   "version": "1.0.0",
-  "description": "Labboration 3",
+  "description": "Labboration 5",
   "source": "index.html",
   "scripts": {
     "start": "parcel",
@@ -9,11 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Git-Bread/L3"
+    "url": "https://github.com/Git-Bread/L5-Frontend"
   },
   "author": "Max Gagner (maga2101)",
   "license": "ISC",
   "dependencies": {
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.1",
     "parcel": "^2.11.0"
   },
   "devDependencies": {

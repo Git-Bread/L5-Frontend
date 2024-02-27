@@ -1,0 +1,51 @@
+//header css
+header
+    background-color: var(--secondary-color)
+
+    #top
+        display: flex
+
+        div
+            margin: auto
+            margin-left: 2vmax
+
+            h3
+                margin: 0
+                font-size: 1.5rem
+
+            h1
+                font-size: 3rem
+                margin: 0
+
+        picture
+            max-width: 40%
+
+            img
+                max-width: 100%
+
+    nav
+        display: flex
+        justify-content: space-around
+        border: solid 1px var(--third-color)
+        background-color: var(--primary-color)
+
+        div
+            position: relative
+
+            button
+                background-color: var(--primary-color)
+                padding: 1vmin
+                border: none
+                color: var(--link-color)
+
+            div
+                position: absolute
+                z-index: 1
+                display: none
+                background-color: var(--primary-color)
+                border: 1px var(--third-color) solid
+                border-radius: 10%
+                right: -25%
+
+            &:hover div
+                display: block

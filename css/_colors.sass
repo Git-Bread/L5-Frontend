@@ -1,0 +1,17 @@
+@use 'sass:color'
+//standard colors
+$textColor: #040103
+$primaryColor: #bfe5bc
+$secondaryColor: #83c181
+$thirdColor: #509051
+$linkColor: #1e07ce
+$hoverColor: color.scale($primaryColor, $lightness: -10%, $saturation: 10%)
+
+//darkmode colors
+$textColor-dark: #ffffff,
+$linkColor-dark: color.scale($linkColor, $lightness: 25%)
+$primaryColor-dark: darken($primaryColor, 30%)
+$secondaryColor-dark: darken($secondaryColor, 25%)
+$thirdColor-dark: darken($thirdColor, 20%)
+$hoverColor-dark: color.scale($primaryColor, $lightness: -20%, $saturation: 100%)
+

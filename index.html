@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3</title>
+        <meta name="Labboration 3" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/aborre.jpg?as=jpg&width=20" type="image/jpg"/>
+        <link rel="stylesheet" href="css/style.sass">
+        <script>
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+                document.getElementsByTagName("html")[0].setAttribute("class", "dark");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="top">
+                    <picture>
+                        <source srcset="images/aborre.jpg?as=avif&width=300" type="image/avif">
+                        <source srcset="images/aborre.jpg?as=webp&width=300" type="image/avif">
+                        <img src="images/aborre.jpg?as=jpg&width=300" alt="aborre i akvarium" type="image/jpg">
+                    </picture>
+                    <div>
+                        <h1>Abborr Sidan</h1>
+                        <h3>Sidan om abborrar</h3>
+                    </div>
+                </div>
+                <nav>
+                    <h2><a href="#" id="current">Startsidan</a></h2>
+                    <h2><a href="animationer.html">Animationer</a></h2>
+                    <div>
+                        <button>Fler Sidor&#8595;</button>
+                        <div>
+                            <h2><a href="sass.html">SASS</a></h2>
+                            <h2><a href="#">Gäddsidan</a></h2>
+                            <h2><a href="#">Rödingsidan</a></h2>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <figure>
+                    <picture id="small-img">
+                        <source srcset="images/lake.jpg?as=avif&width=800" type="image/avif">
+                        <source srcset="images/lake.jpg?as=webp&width=800" type="image/avif">
+                        <img src="images/lake.jpg?as=jpg&width=800" alt="liten sjö med mycket växtlighet" type="image/jpg">
+                    </picture>
+                    <picture id="large-img">
+                        <source srcset="images/lake.jpg?as=avif&width=1600" type="image/avif">
+                        <source srcset="images/lake.jpg?as=webp&width=1600" type="image/avif">
+                        <img src="images/lake.jpg?as=jpg&width=1600" alt="liten sjö med mycket växtlighet" type="image/jpg">
+                    </picture>
+                </figure>
+                <article>
+                    <div>
+                        <h3 class="sub-title">Om Aborrar</h3>
+                        <p>Abborre (Perca fluviatilis) är en sötvattenslevande fisk som jagar i stim och tillhör familjen abborrfiskar
+                            och släktet Perca. Den lever i vilt tillstånd i både Europa och norra Asien, arten har även introducerats i Sydafrika, 
+                            Nya Zeeland och Australien.</p>
+                        <a href="https://sv.wikipedia.org/wiki/Abborre">-Wikipedia</a>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3 class="sub-title">Abborrar i Sverige</h3>
+                        <p>Abborren är en av Sveriges mest utbredda fiskarter. Den är egentligen en sötvattenart, men är också vanlig längs Östersjökusten
+                            och i å- och älvmynningar på västkusten. Abborrar kan bli över 20 år gamla, men växer långsamt och riktigt stora individer är oftast honor. 
+                            Abborren leker på försommaren och honan lägger rommen som en gulvit, geléaktig strumpa över växter.<br><br> De nykläckta ynglen växer upp i grunda 
+                            vikar och livnär sig på plankton. När de blir större äter de insektslarver, mindre kräftdjur och småfisk. 
+                            Vuxna abborrar lever av fisk och kräftdjur.</p>
+                        <a href="https://www.havet.nu/livet/art/abborre">-Havet.nu</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <h5>Sidans bilder är ifrån pexels och dessa faller under deras <a href="https://www.pexels.com/sv-se/license/">licens.</a></h5>
+        </footer>
+    </body>
+</html>

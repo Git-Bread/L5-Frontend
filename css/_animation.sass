@@ -1,0 +1,55 @@
+.anim
+    div:hover
+        //simple transition animation with all property
+        .sub-title
+            color: var(--third-color)
+            text-decoration: underline
+            rotate: 7deg
+            text-shadow: 2px 2px 2px var(--text-color)
+            transition: all 4s
+
+//movement keyframe that does some moving using translate
+#move img
+    position: absolute
+    animation-name: move
+    animation-delay: 2s
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+
+#animation
+    animation-name: scrollAnim
+    animation-duration: 1ms //firefox compatability
+    animation-timeline: scroll()
+
+@keyframes move 
+    0%  
+        transform: translateX(0%)
+    33%  
+        transform: translateX(100%)
+    66% 
+        transform: translateY(100%)
+
+
+//colors curtesy of https://trycolors.com/palette/babjk8
+@keyframes scrollAnim 
+    0%
+        background-color: #CC2F00
+    10%
+        background-color: #DB6600
+    20%
+        background-color: #E39E00
+    30%
+        background-color: #76B80D
+    40%
+        background-color: #007668
+    50%
+        background-color: #006486
+    60%
+        background-color: #007CB5
+    70%
+        background-color: #465AB2
+    80%
+        background-color: #6D47B1
+    90%
+        background-color: #873B9C

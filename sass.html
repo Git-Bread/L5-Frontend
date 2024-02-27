@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3</title>
+        <meta name="Labboration 3" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/aborre.jpg?as=jpg&width=20" type="image/jpg"/>
+        <link rel="stylesheet" href="css/style.sass">
+        <script>
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+                document.getElementsByTagName("html")[0].setAttribute("class", "dark");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="top">
+                    <picture>
+                        <source srcset="images/aborre.jpg?as=avif&width=300" type="image/avif">
+                        <source srcset="images/aborre.jpg?as=webp&width=300" type="image/avif">
+                        <img src="images/aborre.jpg?as=jpg&width=300" alt="aborre i akvarium" type="image/jpg">
+                    </picture>
+                    <div>
+                        <h1>Abborr Sidan</h1>
+                        <h3>Sidan om abborrar</h3>
+                    </div>
+                </div>
+                <nav>
+                    <h2><a href="index.html">Startsidan</a></h2>
+                    <h2><a href="animationer.html">Animationer</a></h2>
+                    <div>
+                        <button>Fler Sidor&#8595;</button>
+                        <div>
+                            <h2><a href="#" id="current">SASS</a></h2>
+                            <h2><a href="#">Gäddsidan</a></h2>
+                            <h2><a href="#">Rödingsidan</a></h2>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <article>
+                    <div>
+                        <h3 class="sub-title-sass">SASS utvärdering Labboration 2</h3>
+                        <p>Sass var utmanande på ett antal fronter, fick slåss mycket med variablerna innan jag gav upp på att försöka få något system för att göra darmode med mestadels SASS. Slutade med en kombination mellan SASS variabler
+                            och standard CSS variabler då dessa är globala. Detta fungerade väldigt bra enligt mig.
+                        </p>
+                        <p>En av de svårare sakerna var att komma över att inte använda brackets för koden... ser lite förvirrande ut med bara identeringar för identification. Har skrivit SCSS förut och då använde jag brackets i strukturen,
+                            kan vara därför jag har svårt att komma över det.
+                        </p>
+                        <p>Det absolut svåraste dock, som tog mest tänkande... var hur skjutton jag ska använda if/else mixin och extend på något sett med hyfsad inteligens bakom det. Gick inget bra på den fronten, if vill jag använda med variabler
+                            fast SASS variabler är så static så det är ett slöseri med tid då man likagärna kan skriva in resultatet, hanterar inte heller css variabler. Kan skriva in något arbitärt bara för att köra det men det vore slöseri,
+                            hittade ett användnigsfall genom att includera den i en mixin ifall man vill ha två liknande css bitar med någon skillnad.
+                        </p>
+                        <p>Men känns generelt som det finns lite fall då de mer advancerade funktionerna som if/else @extend och så vidare faktist är "användbara", om man inte behöver dem för strikt moduläritet. Vill jag ha samma css/sass kod på två ställen?
+                            inget problem! bara lägg till en "body, header" så får båda sakerna samma kod, impressive. har säkert värde om man håller på med extrema mängder kod för att dela upp den så mycket som möjligt... men känns fortfarande si-sådär användbar.
+                            har kanske inte helt förstått poängen men på grund av limitationerna inom språket känns det som att det bara finns ett fåtal fall där det är värt att använda.
+                        </p>
+                        <p>
+                            Mest användbara i SASS tycker jag är nesting och att kunna dela upp koden. Samt så är variablerna mysiga för repetiva värden... fast skulle villa ha bättre scope då jag gillar att dela upp koden.
+                            Dessutom så har color functionerna en del användning fast är nog smartare igentligen bara att ha två olika färger för att försäkra kvalitet. Utöver det så kanske att använda mixin för moduläritet, men så fort jag ska hantera situationer eller variabler där "flexibilitet" har ett värde känns javascsript mer ämnat för det. Ja menar man kan göra
+                            en elaborat mixin med en stor variabel karta för att kunna ha olika färg theman med SASS variabler... eller så slänger man in en linje javascript och gör samma sak med halva texten och normal css variabeler som dessutom har globalt scope. Mindre kod, mindre röra
+                        </p>
+                        <p>
+                            iför denna uppgifft kändes iaf inte alla @ naturliga, fick gå ut och leta efter en anledning när sådant borde vara självklart. Men detta har nog mycket med storleken av sidan att göra, blir nog mer relevant när det finns 500 element.
+                        </p>
+                        <h3 class="sub-title-sass">TL:DR/Slutsats</h3>
+                        <p>
+                            SASS har en stor del fördelar men personligen så är det största mest organiserings fördelar (om man inte räknar med minifiering av kod), får säkert mer förkärlek för det när man använder @loop @extend @mixin @if i stor utstäckning.
+                        </p>
+                        <p>PS: vet att sidan ser relativt.. ful ut, fantasin e si sådär så tog något ämne = abborre och de är gröna, och då har vi en hemsk början till en spygrön sida. Har iaf lite hobbyist utseende :) Måste komma på något "snyggt" med mycket tillgängliga bilder.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <h5>Sidans bilder är ifrån pexels och dessa faller under deras <a href="https://www.pexels.com/sv-se/license/">licens.</a></h5>
+        </footer>
+    </body>
+</html>

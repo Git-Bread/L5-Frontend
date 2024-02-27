@@ -1,0 +1,23 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "Labboration 3",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Git-Bread/L3"
+  },
+  "author": "Max Gagner (maga2101)",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "sharp": "^0.31.3"
+  }
+}

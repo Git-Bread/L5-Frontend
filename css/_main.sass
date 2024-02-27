@@ -1,0 +1,65 @@
+*
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    color: var(--text-color)
+
+p, h3, a, h5
+    max-width: 60ch
+    font-size: 1.5rem
+
+
+//mixin and if example
+@mixin hoverHighlight($current: false)
+    &:hover 
+        background-color: var(--back-color)
+        border: solid 1px black
+    @if $current
+        color: #da2901
+        border: none !important
+
+h2, button
+    font-size: 2rem
+    text-decoration: underline
+    padding: 2vmin
+    border-radius: 2vmin
+    @include hoverHighlight(false)
+    margin: 0
+    font-weight: bold
+
+#current
+    @include hoverHighlight(true)
+
+a
+    color: var(--link-color)
+
+@media (prefers-color-scheme: dark) 
+    body
+        margin: 0
+        background-color: var(--third-color)
+
+
+section
+    article
+        display: flex
+        justify-content: center
+
+        div
+            background-color: var(--secondary-color)
+            padding: 3vmin
+            margin: 2vmin
+            border-radius: 2vmin
+
+    picture
+        display: flex
+        justify-content: center
+
+        img
+            max-width: 105%
+    #large-img
+        display: none
+
+.sub-title
+    font-style: italic
+
+.sub-title-sass
+    @extend .sub-title
+    font-weight: 250

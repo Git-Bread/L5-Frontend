@@ -1,5 +1,5 @@
 import Chart from 'chart.js/auto'
-let color;
+let color = true;
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
     document.getElementsByTagName("html")[0].setAttribute("class", "dark");
@@ -32,6 +32,12 @@ function start(courseMap) {
         Chart.defaults.color = "#ffffff";
     }
 
+    //sets better chart fontsize
+    Chart.defaults.font.size = 20
+    if(window.outerWidth < 400) {
+        Chart.defaults.font.size = 10
+    }
+
     //if page diagram
     if(document.getElementById("bar")) {
         courseMap.sort((a, b) => b[1] - a[1]);
@@ -51,7 +57,14 @@ function start(courseMap) {
             //makes the chart more responsive
             options: {
                 responsive: true,
-                maintainAspectRatio: false
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        ticks: {
+                            autoSkip: false,
+                        }
+                    }
+                }
             }
         });
         names.pop();
@@ -62,7 +75,10 @@ function start(courseMap) {
                 labels: names,
                 datasets: [{
                     label: "Antal ansökningar till program",
-                    data: values
+                    data: values,
+                    label: {
+                        fontsize: 30
+                    }
                 }]
             },
         });

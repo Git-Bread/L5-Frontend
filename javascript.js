@@ -50,7 +50,7 @@ function start(courseMap) {
             data: {
                 labels: names,
                 datasets: [{
-                    label: "Antal ansökningar till program",
+                    label: " Antal ansökningar till program",
                     data: values
                 }]
             },
@@ -74,11 +74,8 @@ function start(courseMap) {
             data: {
                 labels: names,
                 datasets: [{
-                    label: "Antal ansökningar till program",
+                    label: " Antal ansökningar",
                     data: values,
-                    label: {
-                        fontsize: 30
-                    }
                 }]
             },
         });

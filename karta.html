@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3</title>
+        <meta name="Labboration 3" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/aborre.jpg?as=jpg&width=20" type="image/jpg"/>
+        <link rel="stylesheet" href="css/style.sass">
+        <script>
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+                document.getElementsByTagName("html")[0].setAttribute("class", "dark");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="top">
+                    <picture>
+                        <source srcset="images/aborre.jpg?as=avif&width=300" type="image/avif">
+                        <source srcset="images/aborre.jpg?as=webp&width=300" type="image/avif">
+                        <img src="images/aborre.jpg?as=jpg&width=300" alt="aborre i akvarium" type="image/jpg">
+                    </picture>
+                    <div>
+                        <h1>Abborr Sidan</h1>
+                        <h3>Sidan om abborrar</h3>
+                    </div>
+                </div>
+                <nav>
+                    <h2><a href="index.html">Startsidan</a></h2>
+                    <h2><a href="animationer.html">Animationer</a></h2>
+                    <div>
+                        <button>Fler Sidor&#8595;</button>
+                        <div>
+                            <h2><a href="sass.html">SASS</a></h2>
+                            <h2><a href="karta.html" id="current">Karta</a></h2>
+                            <h2><a href="diagram.html">Diagram</a></h2>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+
+            </section>
+        </div>
+        <footer>
+            <h5>Sidans bilder är ifrån pexels och dessa faller under deras <a href="https://www.pexels.com/sv-se/license/">licens.</a></h5>
+        </footer>
+    </body>
+</html>

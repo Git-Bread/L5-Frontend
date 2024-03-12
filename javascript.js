@@ -115,6 +115,8 @@ function move(location) {
     location = location[0];
     console.log(location)
     map.flyTo([location[1], location[2]], 8);
+    let marker = L.marker([location[1], location[2]]).addTo(map);
+    marker.bindPopup(location[0]).openPopup();
 }
 
 //a bit messy but dident wanna restructure
